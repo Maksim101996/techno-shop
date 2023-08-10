@@ -1,0 +1,130 @@
+.header {
+	color: blue;
+	// .header__container
+	&__container {
+		display: flex;
+		// border: 1px solid red;
+		min-height: 80px;
+		align-items: center;
+		justify-content: space-between;
+	}
+	// .header__logo
+	&__logo {
+		width: 310px;
+		height: 50px;
+		margin: 0 0 0 15px;
+	}
+	//.header__logo-image
+	&__logo-image {
+	}
+	// .header__info
+	&__info {
+	}
+	// .header__search-form
+	&__search-form {
+	}
+	// .header__search
+	&__search {
+		width: 303px;
+		padding: 5px;
+		border-radius: 6px;
+		background: #191919;
+		font-size: 14px;
+		color: #b8b8b8;
+		outline: none;
+		&::placeholder {
+			color: #b8b8b8;
+			opacity: 1;
+			font-size: 12px;
+		}
+
+		&:-ms-input-placeholder {
+			color: #b8b8b8;
+			font-size: 12px;
+		}
+
+		&::-ms-input-placeholder {
+			color: #b8b8b8;
+			font-size: 12px;
+		}
+	}
+	// .header__box
+	&__box {
+	}
+	// .header__account
+	&__account {
+		display: flex;
+	}
+	// .header__favorites
+	&__favorites {
+		margin: 0px 8px 0px 0px;
+	}
+	// .header__basket
+	&__basket {
+		display: flex;
+		align-items: center;
+	}
+	//.header__basket-count
+	&__basket-count {
+		color: red;
+		align-self: flex-end;
+		transform: translate(-9px, 6px);
+		border-radius: 50%;
+		width: 15px;
+		height: 15px;
+		text-align: center;
+		background-color: purple;
+		color: #fff;
+		font-size: 14px;
+	}
+}
+.info {
+	// .info__user
+	&__user {
+		display: flex;
+		align-items: center;
+	}
+	// .info__avatar
+	&__avatar {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 34px;
+		height: 34px;
+		border-radius: 50%;
+		background-color: #191919;
+	}
+	//.info__avatar-image
+	&__avatar-image {
+		width: 20px;
+		height: 20px;
+	}
+	// .info__user-name
+	&__user-name {
+		color: #b8b8b8;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		font-size: 14px;
+		margin: 0px 0px 0px 10px;
+	}
+}
+.icon-heart {
+	display: block;
+	width: 24px;
+	height: 24px;
+	fill: #212123;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		fill: purple;
+	}
+}
+.icon-basket {
+	display: block;
+	width: 24px;
+	height: 24px;
+	fill: #b8b8b8;
+	transition: all 0.3s ease 0s;
+
+	&:hover {
+		fill: orange;
+	}
+}

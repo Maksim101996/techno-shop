@@ -1,0 +1,41 @@
+.footer {
+	background-color: #191919;
+	// .footer__container
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		min-height: 73px;
+		padding: 0 10px;
+	}
+	// .footer__logo
+	&__logo {
+	}
+	// .footer__year
+	&__year {
+		color: #6c3eb8;
+	}
+	// .footer__social
+	&__social {
+		display: flex;
+		align-items: center;
+		& *:not(:last-child) {
+			margin: 0px 16px 0px 0px;
+		}
+	}
+}
+.header {
+	// .header__logo-image
+	&__logo-image {
+	}
+}
+
+.icon-social {
+	fill: #6c3eb8;
+	width: 25px;
+	height: 25px;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		fill: #fff;
+	}
+}
