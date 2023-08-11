@@ -1,4 +1,4 @@
-export interface IProduct {
+export interface ICategory {
 	id: number
 	name: "string"
 	image: "string"

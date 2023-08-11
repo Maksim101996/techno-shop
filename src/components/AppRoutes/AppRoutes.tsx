@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from '../Home/Home'
 
 const AppRoutes: FC = () => {
-	return <div>
+	return <div className="appRoutes">
 		<Routes>
 			<Route index element={<Home />} />
 		</Routes>

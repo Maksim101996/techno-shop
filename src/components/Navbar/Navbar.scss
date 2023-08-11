@@ -1,5 +1,6 @@
 .navbar {
 	background-color: #191919;
+
 	// .navbar__container
 	&__container {
 	}
@@ -8,10 +9,15 @@
 		margin: 0px 0px 0px 80px;
 		display: flex;
 		min-height: 20px;
-		font-size: 0.875rem;
+		font-size: 1.15rem;
 		align-items: center;
 		& *:not(:last-child) {
 			margin: 0px 25px 0px 0px;
+		}
+		& * {
+			&:hover {
+				color: #fff;
+			}
 		}
 	}
 	// .navbar__item
@@ -19,8 +25,9 @@
 		color: #6c3eb8;
 		transition: all 0.3s ease 0s;
 		cursor: pointer;
-		&:hover {
-			color: #fff;
-		}
 	}
+}
+
+.active {
+	color: #fff;
 }

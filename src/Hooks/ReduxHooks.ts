@@ -3,8 +3,8 @@ import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 
 
 
-// Типизированный диспатч
+// Типизированный диспатч, кастомный хук
 export const useAppDispatch = () => useDispatch<AppDispatch>()
 
-// Типизированный юзСелектор
+// Типизированный юзСелектор, кастомный хук
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
