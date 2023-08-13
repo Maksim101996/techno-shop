@@ -21,7 +21,7 @@ const Header: FC = () => {
 						<img className="info__avatar-image" src={avatar} alt="user-avatar" />
 					</div>
 					<div className="info__user-name">
-						Maksim
+						Maksim 666
 					</div>
 				</div>
 			</div>
