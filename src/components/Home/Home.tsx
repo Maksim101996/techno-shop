@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import "./Home.scss"
-import Categories from './Poster/Categories'
+import Categories from './Categories/Categories'
 
 
 const Home: FC = () => {
