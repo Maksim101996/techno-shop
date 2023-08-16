@@ -1,18 +1,25 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import { Link } from 'react-router-dom';
 import "./Header.scss";
 import logo from '../../Assets/Images/Header/logo2.png'
 import avatar from '../../Assets/Images/Header/userAvatar.png'
-import { ROUTES } from '../utils/Routes';
-
+import { ROUTES } from '../../components/utils/Routes';
+import miniLogo from "../../Assets/Images/footer/logo3.png"
 
 
 const Header: FC = () => {
+	const widthSize = window.innerWidth
+	console.log(widthSize);
+
+
+
+
+
 	return <div className='header'>
 		<div className="header__container">
 			<div className="header__logo">
 				<Link to={ROUTES.HOME}>
-					<img className='header__logo-image' src={logo} alt="logo-icon" />
+					{widthSize > 768 ? <img className='header__logo-image' src={logo} alt="logo-icon" /> : <img className='header__logo-image' src={miniLogo} alt="logo-icon" />}
 				</Link>
 			</div>
 			<div className="header__info info">
