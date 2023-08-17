@@ -9,7 +9,7 @@ import Navbar from './components/Navbar/Navbar';
 
 function App() {
 	return (
-		<div className='app' id="app">
+		<div className='app' id="app" title="APP">
 			<Header />
 			<Navbar />
 			<AppRoutes />
