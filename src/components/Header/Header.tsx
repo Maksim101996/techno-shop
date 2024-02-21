@@ -1,4 +1,5 @@
 import { FC, useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom';
 import "./Header.scss";
 import logo from '../../Assets/Images/Header/logo2.png'
@@ -10,8 +11,6 @@ import miniLogo from "../../Assets/Images/footer/logo3.png"
 const Header: FC = () => {
 	const widthSize = window.innerWidth
 	console.log(widthSize);
-
-
 
 
 
@@ -28,7 +27,7 @@ const Header: FC = () => {
 						<img className="info__avatar-image" src={avatar} alt="user-avatar" />
 					</div>
 					<div className="info__user-name">
-						Maksim
+						Maksim1
 					</div>
 				</div>
 			</div>
@@ -40,7 +39,7 @@ const Header: FC = () => {
 					autoFocus={true}
 					// value=""
 					placeholder='Search product...'
-					onChange={() => { }}
+
 				/>
 				<div className="header__box"></div>
 			</form>
@@ -62,4 +61,4 @@ const Header: FC = () => {
 	</div>
 }
 
-export default Header
+export default React.memo(Header)
